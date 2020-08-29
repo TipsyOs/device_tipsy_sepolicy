@@ -11,11 +11,9 @@ endif
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/tipsy/sepolicy/qcom/dynamic \
     device/tipsy/sepolicy/qcom/system \
     device/tipsy/sepolicy/qcom/private
 else
 BOARD_SEPOLICY_DIRS += \
-    device/tipsy/sepolicy/qcom/dynamic \
     device/tipsy/sepolicy/qcom/vendor
 endif
